@@ -24,14 +24,13 @@ jobs:
 
     - name: Install catch2 v2
       run: |
-          wget https://github.com/catchorg/Catch2/archive/refs/tags/v2.13.9.tar.gz
-          tar -xvf v2.13.9.tar.gz
-          cd Catch2-2.13.9
           if [ -f build ]; then
              rm -rf build
           fi
           mkdir build
           cd build
+          wget https://github.com/catchorg/Catch2/archive/refs/tags/v2.13.9.tar.gz
+          tar -xvf v2.13.9.tar.gz
           sudo cmake -S.. -B.
           sudo cmake --build . --target install
           
