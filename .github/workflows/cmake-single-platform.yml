@@ -32,7 +32,7 @@ jobs:
           cd Catch2-2.13.9
           mkdir build
           cd build
-          sudo cmake -S. -B.
+          sudo cmake -S.. -B.
           sudo cmake --build . --target install
           
     - name: Debug Catch2 directory
