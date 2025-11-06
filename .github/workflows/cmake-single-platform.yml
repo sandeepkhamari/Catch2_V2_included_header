@@ -29,6 +29,7 @@ jobs:
           cd Catch2-2.13.9
           if [ -f build ]; then
              rm -rf build
+          fi
           mkdir build
           cd build
           sudo cmake -S.. -B.
