@@ -2,7 +2,7 @@
 // inlcuded headers are supported only in Catch2 v2, not v3.
 //#include <catch2/included/catch_all.hpp>
 #include <vector>
-#include <catch2/catch_all.hpp>
+#include <catch.hpp>
 
 TEST_CASE("Vector operations")
 {
