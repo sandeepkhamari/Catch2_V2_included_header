@@ -31,6 +31,7 @@ jobs:
           cd build
           wget https://github.com/catchorg/Catch2/archive/refs/tags/v2.13.9.tar.gz
           tar -xvf v2.13.9.tar.gz
+          set(Catch2_DIR ${CMAKE_SOURCE_DIR}/build/Catch2-2.13.9)
           sudo cmake -S.. -B.
           sudo cmake --build . --target install
           
