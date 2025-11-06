@@ -30,7 +30,7 @@ jobs:
           pwd
           ls -ltr
           cd Catch2-2.13.9
-          sudo cmake -S.. -B.
+          sudo cmake -S. -B.
           sudo cmake --build . --target install
           
     - name: Debug Catch2 directory
