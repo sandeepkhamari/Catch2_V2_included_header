@@ -33,7 +33,7 @@ jobs:
           mkdir build
           cd build
           sudo cmake -S.. -B.
-          sudo cmake --build .
+          sudo cmake --build . --target install
     
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
