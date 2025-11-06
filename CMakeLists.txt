@@ -14,7 +14,7 @@ include(CTest)
 
 add_executable(test_included_header test_included_header.cpp)
 #target_include_directories()
-target_link_libraries(test_included_header PRIVATE Catch2::Catch2WithMain)
+#target_link_libraries(test_included_header PRIVATE Catch2::Catch2WithMain)
 
 include(Catch)
 catch_discover_tests(test_included_header)
