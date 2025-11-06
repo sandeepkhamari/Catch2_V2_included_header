@@ -27,8 +27,12 @@ jobs:
           wget https://github.com/catchorg/Catch2/archive/refs/tags/v2.13.9.tar.gz
           tar -xvf v2.13.9.tar.gz
           cd Catch2-2.13.9
-          sudo cmake -S. -B.
-          sudo cmake --build build --target install 
+          if [ -f build ]; then
+             rm -rf build
+          mkdir build
+          cd build
+          sudo cmake -S.. -B.
+          sudo cmake --build .
     
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
