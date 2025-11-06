@@ -30,6 +30,8 @@ jobs:
           pwd
           ls -ltr
           cd Catch2-2.13.9
+          mkdir build
+          cd build
           sudo cmake -S. -B.
           sudo cmake --build . --target install
           
