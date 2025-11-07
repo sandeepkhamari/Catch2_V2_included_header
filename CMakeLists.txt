@@ -15,7 +15,7 @@ include(CTest)
 add_executable(test_included_header test_included_header.cpp)
 target_include_directories(test_included_header
                            PUBLIC
-                           ${CMAKE_SOURCE_DIR}/Catch2-2.13.9/single_include/catch2)
+                           ${CMAKE_SOURCE_DIR}/Catch2-2.13.9/single_include/catch2/)
 
 #target_link_libraries(test_included_header PRIVATE Catch2::Catch2WithMain)
 
