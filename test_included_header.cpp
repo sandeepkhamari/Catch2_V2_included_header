@@ -1,4 +1,5 @@
 #include <iostream>
+#define CATCH_CONFIG_MAIN
 // inlcuded headers are supported only in Catch2 v2, not v3.
 #include <catch.hpp>
 #include <vector>
