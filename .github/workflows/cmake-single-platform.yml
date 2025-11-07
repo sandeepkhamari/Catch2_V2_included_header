@@ -45,7 +45,7 @@ jobs:
           ls -R Catch2-2.13.9/single_include
 
     - name: Check included
-    - run: |
+      run: |
           ls -R Catch2-2.13.9/included
     
     - name: Configure CMake
