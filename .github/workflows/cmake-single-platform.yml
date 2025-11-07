@@ -43,6 +43,10 @@ jobs:
     - name: Check single_include
       run: |
           ls -R Catch2-2.13.9/single_include
+
+    - name: Check included
+    - run: |
+          ls -R Catch2-2.13.9/included
     
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
