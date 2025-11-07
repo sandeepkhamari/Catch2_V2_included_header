@@ -1,6 +1,6 @@
 #include <iostream>
 // inlcuded headers are supported only in Catch2 v2, not v3.
-#include <catch2/included/catch.hpp>
+#include <catch.hpp>
 #include <vector>
 
 TEST_CASE("Vector operations")
